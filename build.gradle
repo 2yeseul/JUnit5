@@ -12,7 +12,9 @@ configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+
 }
+
 
 repositories {
     mavenCentral()
@@ -25,6 +27,7 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile group: 'org.kohsuke', name: 'github-api', version: '1.117'
 }
 
 test {

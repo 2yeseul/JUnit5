@@ -1,6 +1,7 @@
 package com.example.junit5test.Person;
 
 import lombok.Builder;
+import org.kohsuke.github.GitHub;
 
 public class Person {
     private String firstName;
@@ -29,4 +30,5 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 }
